@@ -1,17 +1,16 @@
 "use client";
 
-import { Model4 } from "@/components/models/Model4";
-import { CameraControls, Float } from "@react-three/drei";
+import { Astronaut } from "@/components/models/Astronaut";
+import { Float } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
-import { Astronaut } from "@/components/models/Astronaut";
 
-import DialogBox from "../ui/DialogBox";
-import { useIsMobile } from "@/lib/useIsMobile";
 import { useCursor } from "@/lib/useCursor";
-import MaxWidthWrapper from "../MaxWidthWrapper";
+import { useIsMobile } from "@/lib/useIsMobile";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import MaxWidthWrapper from "../MaxWidthWrapper";
+import DialogBox from "../ui/DialogBox";
 
 const DES = [
   "build robust web applications.",
